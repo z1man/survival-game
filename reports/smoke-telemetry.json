@@ -1,0 +1,40 @@
+{
+  "events": [
+    {
+      "t": 0,
+      "event": "session_start",
+      "data": {
+        "seed": 88421,
+        "specHash": "-6b86bcdf"
+      }
+    },
+    {
+      "t": 0,
+      "event": "rule_start",
+      "data": {
+        "type": "NoIdleDamage",
+        "params": {
+          "dps": 1.4,
+          "idleGraceMs": 700
+        }
+      }
+    },
+    {
+      "t": 0,
+      "event": "rule_start",
+      "data": {
+        "type": "BulletBounce",
+        "params": {
+          "maxBounces": 2
+        }
+      }
+    },
+    {
+      "t": 1,
+      "event": "enemy_spawn",
+      "data": {
+        "count": 4
+      }
+    }
+  ]
+}
