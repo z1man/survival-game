@@ -1,0 +1,16 @@
+{
+  "version": "0.1",
+  "seed": 88421,
+  "meta": { "title": "One Room, Many Fates", "difficultyTarget": "medium", "sessionSeconds": 120 },
+  "arena": { "width": 960, "height": 540, "walls": true },
+  "player": { "hp": 100, "speed": 220, "weapon": { "type": "pistol", "fireRate": 5, "damage": 8, "bulletSpeed": 520 } },
+  "enemies": {
+    "spawn": { "pattern": "waves", "everySeconds": 8, "count": 4 },
+    "templates": [{ "id": "chaser", "hp": 22, "speed": 135, "behavior": "ChasePlayer" }]
+  },
+  "rules": [
+    { "type": "NoIdleDamage", "params": { "dps": 1.4, "idleGraceMs": 700 } },
+    { "type": "BulletBounce", "params": { "maxBounces": 2 } }
+  ],
+  "winCondition": { "type": "SurviveTime", "params": { "seconds": 90 } }
+}

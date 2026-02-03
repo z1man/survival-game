@@ -1,0 +1,4 @@
+{
+  "NoIdleDamage": { "params": { "dps": [0.5, 6], "idleGraceMs": [0, 1500] }, "mustEmit": ["rule_effect:idle_damage"] },
+  "BulletBounce": { "params": { "maxBounces": [0, 6] }, "mustEmit": ["rule_effect:bullet_bounce"] }
+}
